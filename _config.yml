@@ -12,6 +12,21 @@ baseurl: ''
 include: ["_pages"]
 permalink: /:title/
 
+# Collections
+collections:
+  projectNatures:
+    output: true
+    permalink: /natures-projets/:title/
+  projects:
+    output: true
+    permalink: /projets/:title/
+  skills:
+    output: true
+    permalink: /compétences/:title/
+  technologies:
+    output: true
+    permalink: /technologies/:title/
+
 # Authors
 authors:
   essarraj:
