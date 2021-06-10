@@ -1,18 +1,9 @@
----
-layout: default
----
-
 <div class="container">
   <div class="row">
- 
-   
-      <!-- Post Share -->
-      <div class="col-md-2 pl-0">
-          {% include share.html %}
-      </div>
 
-      <!-- Post -->
-      {% assign author = site.authors[page.author] %}
+   
+
+
 
       <div class="col-md-9 flex-first flex-md-unordered">
           <div class="mainheading">
@@ -35,7 +26,7 @@ layout: default
               {% endif %}
 
               <!-- Post Title -->
-              <h1 class="posttitle">{{ page.title }}</h1>
+              <h1 class="posttitle">{{ page.title }}  ss {{page.author}}</h1>
 
           </div>
 
@@ -95,7 +86,7 @@ layout: default
                   {% assign sortedCategories = page.projectNatures | sort %}
                   {% for category in sortedCategories %}
                   <li>
-                      <a class="smoothscroll" href="{{site.baseurl}}/portfolio#{{ category | replace: " ","-" }}">{{ category }}</a>
+                      <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
                   </li>
                   {% endfor %}
               </ul>
@@ -105,10 +96,10 @@ layout: default
           <!-- Post Tags -->
           <div class="after-post-tags">
               <ul class="tags">
-                  {% assign sortedTags = page.technologies | sort %}
+                  {% assign sortedTags = page.tags | sort %}
                   {% for tag in sortedTags %}
                   <li>
-                      <a class="smoothscroll" href="/portfolio-technoligies#{{ tag | replace: " ","-" | replace: ".","-"  }}">#{{ tag }}</a>
+                      <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
                   </li>
                   {% endfor %}
               </ul>
@@ -118,11 +109,10 @@ layout: default
           <!-- Prev/Next -->
           <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
           {% if page.previous.url %}
-          <a class="prev d-block col-md-6" href="{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
+          <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
           {% endif %}
           {% if page.next.url %}
-
-          <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url}}">{{page.next.title}} &raquo; </a>
+          <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
           {% endif %}
           <div class="clearfix"></div>
           </div>
@@ -136,7 +126,19 @@ layout: default
 <!-- End Article
 ================================================== -->
 
-
+<!-- Begin Comments
+================================================== -->
+{% if page.comments != false %}
+  <div class="container">
+      <div id="comments" class="row justify-content-center mb-5">
+          <div class="col-md-8">
+              {% include disqus.html %}
+          </div>
+      </div>
+  </div>
+{% endif %}
+<!--End Comments
+================================================== -->
 
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
 https://search.google.com/structured-data/testing-tool/u/0/
@@ -164,3 +166,43 @@ https://search.google.com/structured-data/testing-tool/u/0/
 </script>
 {% endif %}
  
+
+
+{% assign prevflag = 1 %}
+{% assign nextflag = 1 %}
+
+{% for c in site.projects %}
+  {% if c.title == page.title %}
+    {% assign currentItemIndex = forloop.index0 %}
+    {% if forloop.index == 1 %}
+      {% assign prevflag = 0 %}
+      {% assign nextflag = 1 %}
+    {% elsif forloop.index == forloop.length %}
+      {% assign prevflag = 1 %}
+      {% assign nextflag = 0 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if prevflag == 1 %}
+  {% assign prevItemIndex = currentItemIndex | minus: 1 %}
+  {% assign prevPost = site.projects[prevItemIndex] %}
+{% endif %}
+
+{% if nextflag == 1 %}
+  {% assign nextItemIndex = currentItemIndex | plus: 1 %}
+  {% assign nextPost = site.projects[nextItemIndex] %}
+{% endif %}
+
+<div id="post-nav">
+    {% if prevPost.url %}
+    <a class="prev" rel="prev" href="{{ prevPost.url }}">
+        <span>&lt; {{ prevPost.title }}</span>
+    </a>
+    {% endif %}
+    {% if nextPost.url %}
+    <a class="next" rel="next" href="{{ nextPost.url }}">
+        <span>{{ nextPost.title }} &gt;</span>
+    </a>
+    {% endif %}
+</div>
