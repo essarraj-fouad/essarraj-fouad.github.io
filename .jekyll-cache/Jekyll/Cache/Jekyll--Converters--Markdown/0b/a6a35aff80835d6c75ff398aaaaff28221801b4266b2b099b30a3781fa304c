@@ -1,9 +1,4 @@
----
-layout: default
-title: Accueil
----
-
-{% if page.url == "/" %}
+I"<p>{% if page.url == “/” %}</p>
 
 <!-- Featured
 ================================================== -->
@@ -19,9 +14,9 @@ title: Accueil
     {% endfor %}
     </div>
 </section>
-{% endif %}
+<p>{% endif %}
 <!-- Posts Index
-================================================== -->
+================================================== --></p>
 <section class="recent-posts">
     <div class="section-title">
         <h2><span>Articles</span></h2>
@@ -42,3 +37,4 @@ title: Accueil
 </span>
 </div>
 
+:ET

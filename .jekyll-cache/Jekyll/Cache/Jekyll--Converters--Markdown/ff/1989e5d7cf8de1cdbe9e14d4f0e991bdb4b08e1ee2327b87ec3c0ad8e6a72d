@@ -1,36 +1,48 @@
----
-layout: default
-title: Accueil
----
-
-{% if page.url == "/" %}
+I"%<p>{% if page.url == “/” %}</p>
 
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span>Nouveaux articles</span></h2>
+        <h2><span>Articles spéciaux</span></h2>
     </div>
     <div class="row">
+
     {% for post in site.posts %}
+
         {% if post.featured == true %}
+
             {% include featuredbox.html %}
+
         {% endif %}
+
     {% endfor %}
+
     </div>
 </section>
-{% endif %}
+
+<p>{% endif %}</p>
+
 <!-- Posts Index
 ================================================== -->
 <section class="recent-posts">
+
     <div class="section-title">
-        <h2><span>Articles</span></h2>
+
+        <h2><span>All Stories</span></h2>
+
     </div>
+
     <div class="row listrecent">
+
         {% for post in paginator.posts %}
+
         {% include postbox.html %}
+
         {% endfor %}
+
     </div>
+
 </section>
 
 <!-- Pagination
@@ -42,3 +54,4 @@ title: Accueil
 </span>
 </div>
 
+:ET
