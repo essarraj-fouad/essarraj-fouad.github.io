@@ -11,14 +11,26 @@ rating: 1
 L' Internet est une partie de plus en plus importante de la vie des gens du monde entier.
 Tout au long de cette session, j'essaierai de répondre à quelques questions de base que vous pouvez vous poser sur Internet et son utilisation. Lorsque vous aurez terminé, vous aurez une bonne compréhension du fonctionnement d'Internet , de la connexion à Internet et de la navigation sur le Web .
 
-## Réseaux informatiques
+>Il a révolutionné nos vies avec ses capacités techniques, mais comment Internet est-il né et comment a-t-il réussi à se répandre dans le monde et à toucher plus d'un milliard d'utilisateurs ?
+
+> L’Internet est une interconnexion de réseaux qui couvre l’ensemble du globe.
+
+## Qu’est ce qu’un réseau informatique ?
+
+## Le réseau Internet
+
+> Internet n’est pas un service commercial mais un réseau de réseaux dans lequel chacun des postes de ce réseau peut échanger des informations avec n’importe quel autre, où qu’il se trouve. Evidemment seules les informations que chacun des groupes veut bien partager sont mises à la disposition de tous.
 
 ## Qu'est-ce que l'internet?
 
-----
-Il a révolutionné nos vies avec ses capacités techniques, mais comment Internet est-il né et comment a-t-il réussi à se répandre dans le monde et à toucher plus d'un milliard d'utilisateurs ?
+> Internet est un système de communication (un réseau de communication) entre des ordinateurs. Il est évident que ce système de communication pour échanger des données entre des ordinateurs répond à des normes, … ce que l’on appel des protocoles.
 
-----
+> Un ordinateur pour être accessible et en communication via Internet doivent disposer d’un numéro d’identification (comme un numéro de téléphone), ce numéro est appelé une IP (IP pour Internet Protocol).
+
+> Pour pouvoir se connecter au réseau Internet il donc disposer d’une IP, en tant que particulier, celui qui est en mesure de fournir une IP de connexion est ce que l’on appelle le fournisseur d’accès (en France les plus connus : Free, Orange, SFR, Bouygues Télécom).
+
+> L’appareil, l’ordinateur qui nous permet d’accéder à Internet et appeler un terminal.
+
 Internet est un réseau mondial de milliards d'ordinateurs et d'autres appareils électroniques. Avec Internet, il est possible d'accéder à presque toutes les informations, de communiquer avec n'importe qui d'autre dans le monde et de faire bien plusieurs choses.
 
 Vous pouvez faire tout cela en connectant un ordinateur à Internet, ce qui est également appelé connexion en ligne . Quand quelqu'un dit qu'un ordinateur est en ligne, c'est juste une autre façon de dire qu'il est connecté à Internet.
@@ -26,6 +38,8 @@ Vous pouvez faire tout cela en connectant un ordinateur à Internet, ce qui est 
 Internet est un vaste réseau qui connecte des ordinateurs partout dans le monde. Grâce à Internet, les gens peuvent partager des informations et communiquer de n'importe où avec une connexion Internet.
 
 Internet , une architecture de système qui a révolutionné les communications et les méthodes de commerce en permettant à divers réseaux informatiques à travers le monde de s'interconnecter. Parfois appelé « réseau de réseaux », Internet est apparu aux États-Unis dans les années 1970 mais n'est devenu visible pour le grand public qu'au début des années 1990. D'ici 2020, environ 4,5 milliards de personnes, soit plus de la moitié de la population mondiale, auraient accès à Internet.
+
+>Ensemble de réseaux mondiaux interconnectés qui permet à des ordinateurs et à des serveurs de communiquer efficacement au moyen d'un protocole de communication commun (IP). Ses principaux services sont le Web, le FTP, la messagerie 
 
 ![Ordinateurs se connectant à Internet](../assets/images/image.png)
 
@@ -46,6 +60,12 @@ Le Web est un moyen de visualiser et de partager des informations sur Internet. 
 Google gère plus de 40 000 recherches par seconde et détient 60% du marché mondial des navigateurs via Chrome. Il existe près de 2 milliards de sites Web, mais la plupart sont à peine visités. Les 0,1 % des sites Web les plus importants (environ 5 millions) attirent plus de la moitié du trafic Web mondial.
 
 Parmi eux figurent Google, YouTube, Facebook, le site chinois Baidu, Instagram, Yahoo, Twitter, le réseau social russe VK.com, Wikipedia, Amazon et quelques sites pornographiques. L'essor des applications signifie que pour de nombreuses personnes, être sur Internet aujourd'hui consiste moins à naviguer sur le Web ouvert qu'à obtenir des informations plus ciblées : actualités, messages, prévisions météo, vidéos, etc.
+
+
+> Aujourd’hui ce que l’on appelle le Web mais aussi ce que l’on retrouve sous la désignation du Cloud (l’accès à de l’information, de la donnée à travers Internet) est constitué d’ordinateurs, de machines qui répondent en générale à des caractéristiques bien particulières et que l’on appelle des serveurs. Ces serveurs sont en générale très nombreux et se retrouvent stockés dans de grands bâtiments construit pour eux que l’on appel des datacenters.
+
+> L’usage d’Internet ne se limite pas au stockage de sites Internet et à la visualisation de pages Web au travers d’un navigateur. Internet c’est un système de communication qui permet de transférer, échanger des données entre des ordinateurs. Ces données peuvent être de différents type (textuelle, visuelles, sonores, …) et c’est donc suivant ce que l’on a et que l’on veut faire avec ses données via Internet qu’on utilise différents protocoles.
+> Exemple : pour l’envoie de données sur un serveur Web à travers Internet on utilise le protocole FTP (pour File transfert Protocol), pour l’appel et l’affichage d’une page Web sur un écran au travers d’un navigateur, on utilise le protocole HTTP (pour Hyper Text Transfert Protocol).
 
 ## Comment fonctionne Internet ?
 

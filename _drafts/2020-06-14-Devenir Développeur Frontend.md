@@ -46,3 +46,6 @@ Dans cette section, vous apprendrez ce que sont les systèmes de contrôle de ve
 ## JavaScript moderne
 
 Dans cette section, vous apprendrez à utiliser les gestionnaires de packages et à vous familiariser avec le "JavaScript moderne".
+
+## Références 
+https://www.w3schools.com/whatis/default.asp
