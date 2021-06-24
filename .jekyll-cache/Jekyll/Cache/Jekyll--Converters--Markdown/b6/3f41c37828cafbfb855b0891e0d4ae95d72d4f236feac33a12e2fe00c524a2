@@ -1,8 +1,0 @@
-I"�<ul>
-  <li>CSS signifie feuilles de style en cascade</li>
-  <li>CSS décrit comment les éléments HTML doivent être affichés à l’écran, sur papier ou dans d’autres médias</li>
-  <li>CSS économise beaucoup de travail. Il peut contrôler la mise en page de plusieurs pages Web à la fois</li>
-  <li>Les feuilles de style externes sont stockées dans des fichiers CSS</li>
-</ul>
-
-:ET
