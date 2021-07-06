@@ -1,0 +1,10 @@
+- name: Accueil
+  link: /
+- name: Formations
+  link: /formations
+- name : Blog
+  link : /blog
+- name : COACHING
+  link : /coaching-personalisé
+- name : Contact
+  link : /contact
