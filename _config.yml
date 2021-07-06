@@ -1,17 +1,11 @@
-# Site
+locale: fr_FR
 name: "ESSARRAJ Fouad"
 title: "ESSARRAJ Fouad"
 description: "Ingénieur et formateur Web"
-logo: 'assets/images/logo/logo-essarraj-fouad_150.png'
-favicon: 'assets/images/favicon.png'
-locale: fr_FR
 baseurl: ''
-#google_analytics: 'UA-46278016-1'
-#disqus: 'demowebsite'
-#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
-encoding: utf-8
+
 # Collections
 collections:
   projectNatures:
@@ -67,12 +61,5 @@ kramdown:
     block:
       line_numbers: true
 
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
-
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

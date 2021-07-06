@@ -6,187 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% seo %}
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="/style.css" type="text/css" />
-	<link rel="stylesheet" href="/css/swiper.css" type="text/css" />
-	<link rel="stylesheet" href="/css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
-	<link rel="stylesheet" href="/css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/colors.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/custom.css" type="text/css" />
 </head>
 
 <body class="stretched">
-
 <div id="wrapper" class="clearfix">
-        
     <header id="header" class="full-header transparent-header" data-sticky-class="not-dark">
         <div id="header-wrap">
             <div class="container">
                 <div class="header-row">
-                    <div id="logo">
-                        <a href="/" class="standard-logo" data-dark-logo="/Content/CodeurAcademy/images/logo-codeur-academy.png"><img src="/Content/CodeurAcademy/images/logo-codeur-academy.png" alt="Codeur Academy"></a>
-                        <a href="/" class="retina-logo" data-dark-logo="/Content/CodeurAcademy/images/logo-codeur-academy.png"><img src="/Content/CodeurAcademy/images/logo-codeur-academy.png" alt="Codeur Academy"></a>
-                    </div>
+                    {% include logo.html %}
                     <div id="primary-menu-trigger">
                         <svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
                     </div>
-
                     {% include navigation.html %}
-
-               
                 </div>
             </div>
         </div>
         <div class="header-wrap-clone"></div>
     </header>
-
-    {{ content }}
+    {{ content }}  
     
-
-    
-    
-    
-
-    <footer id="footer" class="dark">
-        <div class="container">
-            <div class="footer-widgets-wrap">
-                <div class="row col-mb-50">
-                    <div class="col-lg-8">
-                        <div class="row col-mb-50">
-                            <div class="col-md-4">
-                                <div class="widget clearfix">
-                                    <img src="/Content/CodeurAcademy/images/logo-codeur-academy.png" alt="Image" class="footer-logo">
-                                    <p>
-                                        Nous nous sentons extrêmement chanceux d'avoir eu la volonté  et l'opportunité d'apprendre à programmer .
-                                    </p>
-                                    <div>
-                                        <address>
-                                            <strong>Tanger:</strong>Maroc
-                                        </address>
-                                        Téléphone : (212) 0679627281<br>
-                                        essarraj.fouad@gmail.com<br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="widget widget_links clearfix">
-                                    <h4>Menu</h4>
-                                    <ul>
-                                        <li><a href="/">Accueil</a></li>
-                                        <li><a href="/">Formations</a></li>
-                                        <li><a href="/Contact">Contact</a></li>
-                                      
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="widget clearfix">
-                                    <h4>Dernières formations</h4>
-                                    <div class="posts-sm row col-mb-30" id="post-list-footer">
-                                        <div class="entry col-12">
-                                            <div class="grid-inner row">
-                                                <div class="col">
-                                                    <div class="entry-title">
-                                                        <h4><a href="#">Travail collaborative avec git et github.com</a></h4>
-                                                    </div>
-                                                    <div class="entry-meta">
-                                                        <ul>
-                                                            <li>28 / 02 / 2021</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="row col-mb-50">
-                            <div class="col-md-4 col-lg-12">
-                                <div class="widget clearfix" style="margin-bottom: -20px;">
-                                    <div class="row">
-                                        <div class="col-lg-6 bottommargin-sm">
-                                            <div class="counter counter-small"><span data-from="1" data-to="10" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-                                            <h5 class="mb-0">Formations</h5>
-                                        </div>
-                                        <div class="col-lg-6 bottommargin-sm">
-                                            <div class="counter counter-small"><span data-from="1" data-to="1250" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-                                            <h5 class="mb-0">Apprenants</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-lg-12">
-                                <div class="widget clearfix" style="margin-bottom: -20px;">
-                                    <div class="row">
-                                        <div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
-                                            <a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
-                                                <i class="icon-facebook"></i>
-                                                <i class="icon-facebook"></i>
-                                            </a>
-                                            <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-                                        </div>
-                                        <div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
-                                            <a href="#" class="social-icon si-dark si-colored si-youtube mb-0" style="margin-right: 10px;">
-                                                <i class="icon-youtube"></i>
-                                                <i class="icon-youtube"></i>
-                                            </a>
-                                            <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Youtube</small></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="copyrights">
-            <div class="container">
-                <div class="row col-mb-30">
-                    <div class="col-md-6 text-center text-md-left">
-                        Copyrights &copy; 2021 All Rights Reserved by Codeur Academy.<br>
-                    </div>
-                    <div class="col-md-6 text-center text-md-right">
-                        <div class="d-flex justify-content-center justify-content-md-end">
-                            <a href="#" class="social-icon si-small si-borderless si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-github">
-                                <i class="icon-github"></i>
-                                <i class="icon-github"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                                <i class="icon-linkedin"></i>
-                                <i class="icon-linkedin"></i>
-                            </a>
-                        </div>
-                        <div class="clear"></div>
-                        <i class="icon-envelope2"></i> essarraj.fouad@gmail.com <span class="middot">&middot;</span> 
-                        <i class="icon-headphones"></i> (212) 0679627281 <span class="middot">&middot;</span> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% include footer.html %}
+   
 </div>
 
 <div id="gotoTop" class="icon-angle-up"></div>
 
 	<!-- JavaScripts
 	============================================= -->
-	<script src="js/jquery.js"></script>
-	<script src="js/plugins.min.js"></script>
+	<script src="/assets/js/jquery.js"></script>
+	<script src="/assets/js/plugins.min.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script src="js/functions.js"></script>
+	<script src="/assets/js/functions.js"></script>
 
 </body>
 </html>

@@ -5,4 +5,8 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
+.menu-item:hover > .menu-link,
+.menu-item.current > .menu-link {
+	color: #418FBF;
+}
 
