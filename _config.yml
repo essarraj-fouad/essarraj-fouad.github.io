@@ -8,6 +8,9 @@ permalink: /:title/
 
 # Collections
 collections:
+  services:
+    output: true
+    permalink: /services/:name/
   projectNatures:
     output: true
     permalink: /natures-projets/:title/
