@@ -1,7 +1,7 @@
 # Site
 name: "ESSARRAJ Fouad"
 title: "ESSARRAJ Fouad"
-description: "Ingénieur et Formateur Web"
+description: "Ingénieur et formateur Web"
 logo: 'assets/images/logo/logo-essarraj-fouad_150.png'
 favicon: 'assets/images/favicon.png'
 locale: fr_FR
@@ -11,7 +11,7 @@ baseurl: ''
 #mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
-
+encoding: utf-8
 # Collections
 collections:
   projectNatures:
@@ -32,7 +32,7 @@ authors:
   essarraj:
     name: ESSARRAJ
     display_name: Fouad
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    gravatar: e1cd7eaea3fcf6c1e320fd9378713d4f
     email: essarraj.fouad@gmail.com
     web: https://www.essarrajfouad.com
     description: "J'aide les étudiants, élèves ingénieur et stagiaires à développer leurs compétences en développement d’application."
