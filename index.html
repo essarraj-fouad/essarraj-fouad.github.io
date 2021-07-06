@@ -2,45 +2,12 @@
 layout: default
 title: Accueil
 ---
-
-		<!-- Slider
-		============================================= -->
-		<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 include-header">
-			<div class="slider-inner" style="background: #FFF url('/assets/images/hero/hero-1.jpg') center center no-repeat; background-size: cover;">
-
-				<div class="vertical-middle slider-element-fade">
-					<div class="container py-5">
-						<div class="row pt-5">
-							<div class="col-lg-5 col-md-8">
-								<div class="slider-title">
-									<div class="badge rounded-pill badge-default">SEO Ready</div>
-									<h2>Improve your SEO with Data.</h2>
-									<h3 class="text-rotater mb-2" data-separator="," data-rotate="fadeIn" data-speed="3500">- Boost your own <span class="t-rotate">Awesome,Beautiful,Great</span> Website.</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vitae mollitia dignissimos ab qui aspernatur.</p>
-									<a href="demo-seo-about.html" class="button button-rounded button-large nott ls0">Get Started</a>
-									<a href="demo-seo-contact.html" class="button button-rounded button-large button-light text-dark bg-white border nott ls0">Contact Us</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="video-wrap h-100 d-block d-lg-none">
-					<div class="video-overlay" style="background: rgba(255,255,255,0.85);"></div>
-				</div>
-
-			</div>
-		</section><!-- #slider end -->
-
-		<!-- Content
-		============================================= -->
+		{% include slider.html %}
+		
 		<section id="content">
 
 			<div class="content-wrap pt-0">
 
-				<!-- Client Carousel
-				============================================= -->
 				<div class="section bg-transparent m-0 border-bottom py-5">
 					<div class="container">
 						<div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true" data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
@@ -55,7 +22,7 @@ title: Accueil
 
 				<!-- Features
 				============================================= -->
-				<div class="section bg-transparent mt-4 mb-0 pb-0">
+				<div class="section bg-transparent mt-4 mb-0 pb-0" style="background: url('/assets/images/sections/4.png') no-repeat center top; background-size: cover; padding: 140px 0 0;">
 					<div class="container">
 						<div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
 							<div class="badge rounded-pill badge-default">Services</div>
@@ -134,102 +101,6 @@ title: Accueil
 									</div>
 								</div>
 
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-				<!-- Pricing
-				============================================= -->
-				<div class="section m-0" style="background: url('/assets/images/sections/4.png') no-repeat center top; background-size: cover; padding: 140px 0 0;">
-					<div class="container">
-						<div class="row justify-content-between">
-							<div class="col-lg-4 mt-4">
-								<div class="heading-block border-bottom-0 bottommargin-sm">
-									<div class="badge rounded-pill badge-default">Pricing Table</div>
-									<h3 class="nott ls0">No Hidden Charges. <br>Choose Your Best Plan.</h3>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
-								<div class="pricing-tenure-switcher d-flex align-items-center mb-4 position-relative" data-container="#pricing-switch">
-									<span class="pts-left fw-bold text-muted">Monthly</span>
-									<div class="pts-switcher mx-3">
-										<div class="switch">
-											<input id="switch-toggle-pricing-tenure" class="switch-toggle switch-toggle-round" type="checkbox">
-											<label for="switch-toggle-pricing-tenure" class="mb-0"></label>
-										</div>
-									</div>
-									<span class="pts-right fw-bold text-muted">Yearly</span>
-									<div class="price-discount"></div>
-								</div>
-							</div>
-
-							<div class="col-lg-8">
-								<div id="section-pricing" class="page-section p-0 m-0">
-
-									<div id="pricing-switch" class="pricing row align-items-end g-0 col-mb-50 mb-4">
-
-										<div class="col-md-6">
-
-											<div class="pricing-box">
-												<div class="pricing-title">
-													<img class="mb-2 bg-transparent rounded-0" src="/assets/images/icons/man.svg" alt="Pricing Icon" width="50">
-													<h3>Single User Plan</h3>
-													<span>Most Popular</span>
-												</div>
-												<div class="pricing-price">
-													<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>5<span class="price-tenure">Per Month</span></div>
-													<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>48<span class="price-tenure">Per Year</span></div>
-												</div>
-												<div class="pricing-features border-0 bg-transparent">
-													<ul>
-														<li><i class="icon-check-circle color me-2"></i><strong>Limited</strong> Support</li>
-														<li class="pts-switch-content-left text-black-50"><i class="icon-minus-circle me-2"></i><del style="opacity: .5"><strong>1</strong> Free Optimization</del></li>
-														<li class="pts-switch-content-right"><i class="icon-check-circle color me-2"></i><strong>1</strong> Free Optimization</li>
-														<li><i class="icon-check-circle color me-2"></i><strong>100+</strong> Pages</li>
-														<li><i class="icon-check-circle color me-2"></i><strong>Single</strong> User License</li>
-														<li><i class="icon-check-circle color me-2"></i>Phone &amp; Email Support</li>
-													</ul>
-												</div>
-												<div class="pricing-action">
-													<div class="pts-switch-content-left"><a href="#" class="button button-large button-rounded w-100 text-capitalize m-0 ls0">Get Started</a></div>
-													<div class="pts-switch-content-right"><a href="#" class="button button-large button-rounded w-100 text-capitalize m-0 ls0">Get Started</a></div>
-												</div>
-											</div>
-
-										</div>
-
-										<div class="col-md-6">
-
-											<div class="pricing-box">
-												<div class="pricing-title">
-													<img class="mb-2 bg-transparent rounded-0" src="/assets/images/icons/group.svg" alt="Pricing Icon" width="60">
-													<h3>Multiple User Plan</h3>
-												</div>
-												<div class="pricing-price">
-													<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>12<span class="price-tenure">Per Month</span></div>
-													<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>115<span class="price-tenure">Per Year</span></div>
-												</div>
-												<div class="pricing-features border-0 bg-transparent">
-													<ul>
-														<li><i class="icon-check-circle color me-2"></i><strong>24*7</strong> Support</li>
-														<li><i class="icon-check-circle color me-2"></i><strong>10</strong> Free Optimization</li>
-														<li><i class="icon-check-circle color me-2"></i><strong>1000+</strong> Pages</li>
-														<li><i class="icon-check-circle color me-2"></i><strong>Unlimited</strong> User License</li>
-														<li><i class="icon-check-circle color me-2"></i>Phone &amp; Email Support</li>
-													</ul>
-												</div>
-												<div class="pricing-action">
-													<div class="pts-switch-content-left"><a href="#" class="button button-rounded button-large button-light text-dark bg-white border w-100 nott m-0 ls0">Get Started</a></div>
-													<div class="pts-switch-content-right"><a href="#" class="button button-rounded button-large button-light text-dark bg-white border w-100 nott m-0 ls0">Get Started</a></div>
-												</div>
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
 							</div>
 
 						</div>

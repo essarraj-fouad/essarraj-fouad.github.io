@@ -1,10 +1,7 @@
-
-		<!-- Footer
-		============================================= -->
 		<footer id="footer" class="border-0 bg-white">
 			<div class="container">
-				<!-- Footer Widgets
-				============================================= -->
+
+
 				<div class="footer-widgets-wrap pb-5 clearfix">
 
 					<div class="row col-mb-50">
@@ -12,51 +9,49 @@
 
 							<div class="widget clearfix">
 
-								<img src="images/footer-widget-logo.png" alt="Footer Logo" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
-
-								<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p>
-
+								<img src="/assets/images/logo/logo-essarraj-fouad_150.png" alt="ESSARRAJ Fouad" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
+								<p>
+                                    Nous nous sentons extrêmement chanceux d'avoir eu la volonté  et l'opportunité <strong> d'apprendre</strong> à programmer .
+                                </p>
 								<div class="line line-sm"></div>
 
 								<div class="row">
-									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+									<div class="col-lg-4 col-6 bottommargin-sm widget_links">
 										<ul>
-											<li><a href="#">Home</a></li>
-											<li><a href="#">About</a></li>
-											<li><a href="#">FAQs</a></li>
-											<li><a href="#">Support</a></li>
-											<li><a href="#">Contact</a></li>
+											{% for item in site.data.navigation %}
+											<li>
+												<a href="{{ item.link }}">{{ item.name }}</a>
+											  </li>
+											{% endfor %}
 										</ul>
 									</div>
 
-									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+									<div class="col-lg-4 col-6 bottommargin-sm widget_links">
 										<ul>
-											<li><a href="#">Shop</a></li>
-											<li><a href="#">Portfolio</a></li>
-											<li><a href="#">Blog</a></li>
-											<li><a href="#">Events</a></li>
-											<li><a href="#">Forums</a></li>
+											<li><a href="#">..</a></li>
+											<li><a href="#">..</a></li>
 										</ul>
 									</div>
 
-									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
-										<ul>
-											<li><a href="#">Corporate</a></li>
-											<li><a href="#">Agency</a></li>
-											<li><a href="#">eCommerce</a></li>
-											<li><a href="#">Personal</a></li>
-											<li><a href="#">One Page</a></li>
-										</ul>
-									</div>
-
-									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
-										<ul>
-											<li><a href="#">Restaurant</a></li>
-											<li><a href="#">Wedding</a></li>
-											<li><a href="#">App Showcase</a></li>
-											<li><a href="#">Magazine</a></li>
-											<li><a href="#">Landing Page</a></li>
-										</ul>
+									<div class="col-lg-4">
+										<div class="row col-mb-50">
+											<div class="col-md-4 col-lg-12">
+												<div class="widget clearfix" style="margin-bottom: -20px;">
+													<div class="row">
+														<div class="col-lg-6 bottommargin-sm">
+															<div class="counter counter-small"><span data-from="1" data-to="10" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+															<h5 class="mb-0">Formations</h5>
+														</div>
+														<div class="col-lg-6 bottommargin-sm">
+															<div class="counter counter-small"><span data-from="1" data-to="1250" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+															<h5 class="mb-0">Apprenants</h5>
+														</div>
+													</div>
+					
+												</div>
+											</div>
+											
+										</div>
 									</div>
 								</div>
 
@@ -75,7 +70,7 @@
 											</div>
 											<div class="fbox-content">
 												<span class="text-muted">Call Us:</span><br>
-												<h3 class="nott ls0 fw-semibold">(10) 22 33445566</h3>
+												<h3 class="nott ls0 fw-semibold">...</h3>
 											</div>
 										</div>
 									</div>
@@ -87,7 +82,7 @@
 											</div>
 											<div class="fbox-content">
 												<span class="text-muted">Email Us:</span><br>
-												<h3 class="nott ls0 fw-semibold">info@canvas.com</h3>
+												<h3 class="nott ls0 fw-semibold">essarraj.fouad@gmail.com</h3>
 											</div>
 										</div>
 									</div>
@@ -96,9 +91,12 @@
 							</div>
 
 							<div class="widget subscribe-widget clearfix">
-								<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+								<h5>
+									<strong>Abonnez-vous</strong>  à ma newsletter pour obtenir 
+									des nouvelles importantes et des offres incroyables :
+								</h5>
 								<div class="widget-subscribe-form-result"></div>
-								<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
+								<form id="widget-subscribe-form" action="#" method="post" class="mb-0">
 									<div class="input-group mx-auto">
 										<div class="input-group-text bg-transparent"><i class="icon-email2"></i></div>
 										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
@@ -155,130 +153,4 @@
 			</div><!-- #copyrights end -->
 </footer><!-- #footer end -->
 
-<footer id="footer" class="dark">
-    <div class="container">
-        <div class="footer-widgets-wrap">
-            <div class="row col-mb-50">
-                <div class="col-lg-8">
-                    <div class="row col-mb-50">
-                        <div class="col-md-4">
-                            <div class="widget clearfix">
-                                <img src="/Content/CodeurAcademy/images/logo-codeur-academy.png" alt="Image" class="footer-logo">
-                                <p>
-                                    Nous nous sentons extrêmement chanceux d'avoir eu la volonté  et l'opportunité d'apprendre à programmer .
-                                </p>
-                                <div>
-                                    <address>
-                                        <strong>Tanger:</strong>Maroc
-                                    </address>
-                                    Téléphone : (212) 0679627281<br>
-                                    essarraj.fouad@gmail.com<br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="widget widget_links clearfix">
-                                <h4>Menu</h4>
-                                <ul>
-                                    <li><a href="/">Accueil</a></li>
-                                    <li><a href="/">Formations</a></li>
-                                    <li><a href="/Contact">Contact</a></li>
-                                  
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="widget clearfix">
-                                <h4>Dernières formations</h4>
-                                <div class="posts-sm row col-mb-30" id="post-list-footer">
-                                    <div class="entry col-12">
-                                        <div class="grid-inner row">
-                                            <div class="col">
-                                                <div class="entry-title">
-                                                    <h4><a href="#">Travail collaborative avec git et github.com</a></h4>
-                                                </div>
-                                                <div class="entry-meta">
-                                                    <ul>
-                                                        <li>28 / 02 / 2021</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row col-mb-50">
-                        <div class="col-md-4 col-lg-12">
-                            <div class="widget clearfix" style="margin-bottom: -20px;">
-                                <div class="row">
-                                    <div class="col-lg-6 bottommargin-sm">
-                                        <div class="counter counter-small"><span data-from="1" data-to="10" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-                                        <h5 class="mb-0">Formations</h5>
-                                    </div>
-                                    <div class="col-lg-6 bottommargin-sm">
-                                        <div class="counter counter-small"><span data-from="1" data-to="1250" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-                                        <h5 class="mb-0">Apprenants</h5>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-lg-12">
-                            <div class="widget clearfix" style="margin-bottom: -20px;">
-                                <div class="row">
-                                    <div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
-                                        <a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
-                                            <i class="icon-facebook"></i>
-                                            <i class="icon-facebook"></i>
-                                        </a>
-                                        <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-                                    </div>
-                                    <div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
-                                        <a href="#" class="social-icon si-dark si-colored si-youtube mb-0" style="margin-right: 10px;">
-                                            <i class="icon-youtube"></i>
-                                            <i class="icon-youtube"></i>
-                                        </a>
-                                        <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Youtube</small></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="copyrights">
-        <div class="container">
-            <div class="row col-mb-30">
-                <div class="col-md-6 text-center text-md-left">
-                    Copyrights &copy; 2021 All Rights Reserved by Codeur Academy.<br>
-                </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <div class="d-flex justify-content-center justify-content-md-end">
-                        <a href="#" class="social-icon si-small si-borderless si-facebook">
-                            <i class="icon-facebook"></i>
-                            <i class="icon-facebook"></i>
-                        </a>
-                        <a href="#" class="social-icon si-small si-borderless si-github">
-                            <i class="icon-github"></i>
-                            <i class="icon-github"></i>
-                        </a>
-                        <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                            <i class="icon-linkedin"></i>
-                            <i class="icon-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="clear"></div>
-                    <i class="icon-envelope2"></i> essarraj.fouad@gmail.com <span class="middot">&middot;</span> 
-                    <i class="icon-headphones"></i> (212) 0679627281 <span class="middot">&middot;</span> 
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+ 
