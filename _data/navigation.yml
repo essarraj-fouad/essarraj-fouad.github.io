@@ -1,6 +1,6 @@
 - name: Accueil
   link: /
-- name: portfolio
+- name: Portfolio
   link: /portfolio
 - name: Services
   link: /services

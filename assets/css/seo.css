@@ -106,7 +106,9 @@ div.menu-link { cursor: default; }
 
 .play-icon:hover i { transform: scale(1.1); }
 
-#oc-clients .oc-item img { height: 32px; }
+#oc-clients .oc-item img { 
+	height: 90px; 
+}
 
 /* Pricing Switcher
 -----------------------------------------------------------------*/

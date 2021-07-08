@@ -22,7 +22,7 @@ collections:
     permalink: /compétences/:title/
   technologies:
     output: true
-    permalink: /technologies/:title/
+    permalink: /services/:name/
 
 # Authors
 authors:
