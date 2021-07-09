@@ -1,0 +1,13 @@
+---
+layout: default
+title: Blogs
+permalink: /blogs
+---
+{% include page-title.html %}
+
+
+{% for post in paginator.posts %}
+{% include postbox.html %}
+{% endfor %}
+
+{% include pagination.html %}

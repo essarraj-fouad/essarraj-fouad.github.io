@@ -1,9 +1,8 @@
-<div class="rating-holder">
-<div class="c-rating c-rating--regular" data-rating-value="{{post.rating}}">
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>4</button>
-  <button>5</button>
-</div>
+<div class="rating-stars mb-2">
+  {% if post.rating >= 1 %} <i class="icon-star3"></i>{%endif%}
+  {% if post.rating >= 2 %} <i class="icon-star3"></i>{%endif%}
+  {% if post.rating >= 3 %} <i class="icon-star3"></i>{%endif%}
+  {% if post.rating >= 4 %} <i class="icon-star3"></i>{%endif%}
+  {% if post.rating >= 5 %} <i class="icon-star3"></i>{%endif%}
+  <span>{{post.rating}}</span>
 </div>

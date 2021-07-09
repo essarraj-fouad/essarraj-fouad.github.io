@@ -1,16 +1,12 @@
-		<footer id="footer" class="border-0 bg-white">
+<footer id="footer" class="border-0 bg-white">
 			<div class="container">
-
-
 				<div class="footer-widgets-wrap pb-5 clearfix">
-
 					<div class="row col-mb-50">
 						<div class="col-md-8">
-
 							<div class="widget clearfix">
-
 								<img src="/assets/images/logo/logo-essarraj-fouad_150.png" alt="ESSARRAJ Fouad" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
 								<p>
+									
                                     Nous nous sentons extrêmement chanceux d'avoir eu la volonté  et l'opportunité <strong> d'apprendre</strong> à programmer .
                                 </p>
 								<div class="line line-sm"></div>
@@ -39,12 +35,16 @@
 												<div class="widget clearfix" style="margin-bottom: -20px;">
 													<div class="row">
 														<div class="col-lg-6 bottommargin-sm">
-															<div class="counter counter-small"><span data-from="1" data-to="10" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
-															<h5 class="mb-0">Formations</h5>
+															<div class="counter counter-small"><span data-from="1" data-to="{{site.projects | where: 'isTraining', true | size}}" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+															<h5 class="mb-0">Formations </h5>
 														</div>
 														<div class="col-lg-6 bottommargin-sm">
-															<div class="counter counter-small"><span data-from="1" data-to="1250" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
-															<h5 class="mb-0">Apprenants</h5>
+															<div class="counter counter-small"><span data-from="1" data-to="{{site.projects | size}}" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+															<h5 class="mb-0">Projets</h5>
+														</div>
+														<div class="col-lg-6 bottommargin-sm">
+															<div class="counter counter-small"><span data-from="1" data-to="{{site.services | size}}" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+															<h5 class="mb-0">Services</h5>
 														</div>
 													</div>
 					
@@ -109,20 +109,29 @@
 
 								<div class="row col-mb-30">
 									<div class="col-lg-6 col-md-12 col-6">
-										<a href="https://facebook.com/semicolonweb" target="_blank" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
+										<a href="https://www.facebook.com/essarraj.fouad" target="_blank" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
 											<i class="icon-facebook"></i>
 											<i class="icon-facebook"></i>
 										</a>
-										<a href="https://facebook.com/semicolonweb" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+										<a href="https://www.facebook.com/essarraj.fouad" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Aimez-moi</strong><br>sur Facebook</small></a>
 									</div>
 									<div class="col-lg-6 col-md-12 col-6">
-										<a href="https://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
-											<i class="icon-rss"></i>
-											<i class="icon-rss"></i>
+										<a href="https://www.youtube.com/user/FormateurEssarraj" target="_blank" class="social-icon si-dark si-colored si-youtube mb-0" style="margin-right: 10px;">
+											<i class="icon-youtube"></i>
+											<i class="icon-youtube"></i>
 										</a>
-										<a href="https://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
+										<a href="https://www.youtube.com/user/FormateurEssarraj" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Abonnez-vous  </strong><br> à ma chaîne</small></a>
+									</div>
+									<div class="col-lg-6 col-md-12 col-6">
+										<a href="https://linkedin.com/in/essarraj-fouad" target="_blank" class="social-icon si-dark si-colored si-linkedin mb-0" style="margin-right: 10px;">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
+										<a href="https://linkedin.com/in/essarraj-fouad" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Suivez-moi </strong><br>sur LinkedIn</small></a>
 									</div>
 								</div>
+								
+								 
 
 							</div>
 						</div>
@@ -131,26 +140,40 @@
 				</div><!-- .footer-widgets-wrap end -->
 			</div>
 
-			<!-- Copyrights
-			============================================= -->
+
 			<div id="copyrights" style="background: url('/assets/images/hero/footer.svg') no-repeat top center; background-size: cover; padding-top: 70px;">
 				<div class="container clearfix">
 
 					<div class="row justify-content-between col-mb-30">
 						<div class="col-12 col-lg-auto text-center text-lg-start">
-							Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
-							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+							Tous droits réservés par ESSARRAJ Fouad.<br>
 						</div>
 
 						<div class="col-12 col-lg-auto text-center text-lg-end">
 							<div class="copyrights-menu copyright-links clearfix">
-								<a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a href="#">FAQs</a>/<a href="#">Contact</a>
+								 
+							 
+
+
+								{% assign num = 4 %}
+								{% assign i = 1 %}
+								{% for item in site.data.navigation %}
+								<a href="{{ item.link }}">{{ item.name }}</a>
+								{% if i < site.data.navigation.size  %}
+								/ {{i}} -  {{site.data.navigation.size}}
+								{% endif %}
+								{%  increment  i  %}
+								{% endfor %}
+
+							 
+
+
 							</div>
 						</div>
 					</div>
 
 				</div>
-			</div><!-- #copyrights end -->
-</footer><!-- #footer end -->
+			</div>
+</footer>
 
  
