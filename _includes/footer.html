@@ -6,7 +6,6 @@
 							<div class="widget clearfix">
 								<img src="/assets/images/logo/logo-essarraj-fouad_150.png" alt="ESSARRAJ Fouad" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
 								<p>
-									
                                     Nous nous sentons extrêmement chanceux d'avoir eu la volonté  et l'opportunité <strong> d'apprendre</strong> à programmer .
                                 </p>
 								<div class="line line-sm"></div>
@@ -137,9 +136,8 @@
 						</div>
 					</div>
 
-				</div><!-- .footer-widgets-wrap end -->
+				</div>
 			</div>
-
 
 			<div id="copyrights" style="background: url('/assets/images/hero/footer.svg') no-repeat top center; background-size: cover; padding-top: 70px;">
 				<div class="container clearfix">
@@ -151,23 +149,13 @@
 
 						<div class="col-12 col-lg-auto text-center text-lg-end">
 							<div class="copyrights-menu copyright-links clearfix">
-								 
-							 
-
-
-								{% assign num = 4 %}
-								{% assign i = 1 %}
+	 
 								{% for item in site.data.navigation %}
 								<a href="{{ item.link }}">{{ item.name }}</a>
-								{% if i < site.data.navigation.size  %}
-								/ {{i}} -  {{site.data.navigation.size}}
-								{% endif %}
-								{%  increment  i  %}
+								    {% if forloop.last == false %}
+										/  
+									{% endif %}
 								{% endfor %}
-
-							 
-
-
 							</div>
 						</div>
 					</div>
