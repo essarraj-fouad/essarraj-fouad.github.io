@@ -1,0 +1,42 @@
+---
+layout: page
+title: Mes réalisations
+subTitle : Projets et formations
+permalink: /portfolio
+comments: false
+floatingHeader : true
+darkSlider : true
+breadcrumb : [["Portfolio","/portfolio"]]
+---
+{% include page-title.html %}
+{% assign categories_projects = '' | split: '' %}
+{% for project in site.projects %}
+{% assign categories_projects = categories_projects | concat: project.categories | uniq   %}
+{% endfor %}
+<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+					<div class="grid-filter-wrap">
+						<ul class="grid-filter" data-container="#portfolio">
+							<li class="activeFilter"><a href="#" data-filter="*">Voir tous</a></li>
+							{% for category in categories_projects %}
+							<li><a href="#" data-filter=".pf-{{ category | slugify }}">{{ category }}</a></li>
+							{% endfor %}
+						</ul>
+						<div class="grid-shuffle rounded" data-container="#portfolio">
+							<i class="icon-random"></i>
+						</div>
+					</div>
+					<div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
+						{% for project in site.projects %}
+						{% include projectbox.html %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+</section>
+
+
+
+
+

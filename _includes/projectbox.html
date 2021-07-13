@@ -1,44 +1,28 @@
-<!-- begin project -->
-<div class="col-lg-4 col-md-6 mb-30px card-group">
-    <div class="card h-100">
-        <div class="maxthumb">
-            <a href="{{ site.baseurl }}{{ project.url }}">
-               
-                {% if project.image %}
-
-                    {% if site.lazyimages == "enabled" %}
-                        <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if project.image contains "://" %}{{ project.image }}{% else %}{{ site.baseurl }}/{{ project.image }}{% endif %}" alt="{{ project.title }}">
-                    {% else %}
-                        <img class="img-fluid" src="{% if project.image contains "://" %}{{ project.image }}{% else %}{{ site.baseurl }}/{{ project.image }}{% endif %}" alt="{{ project.title }}"> 
-                    {% endif %}
-
-                {% endif %}
+<article class="portfolio-item col-md-4 col-sm-6 col-12 {% for category in project.categories %} pf-{{ category | slugify }} {% endfor %} ">
+    <div class="grid-inner">
+        <div class="portfolio-image">
+            <a href="portfolio-single.html">
+                <img  src="{{ site.baseurl }}/{{ project.image }}" alt="{{ project.title }}"> 
             </a>
-        </div>
-        <div class="card-body">
-            <h2 class="card-title">
-                <a class="text-dark" href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
-                {% if project.rating %}
-                <div class="mb-2 mt-2 font-weight-normal">
-                {% include star_rating.html %}
+            <div class="bg-overlay">
+                <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                    {% if project.video %}
+                    <a href="{{ project.video }}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                    {% else %}
+                    <a href="{{ site.baseurl }}/{{ project.image }}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="image" title="{{ project.title }}"><i class="icon-line-plus"></i></a>
+                    {% endif %}
+                    <a href="{{ site.baseurl }}{{ project.url }}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-ellipsis"></i></a>
                 </div>
-                {% endif %}
-            </h2>
-            <h4 class="card-text">{{ project.excerpt | strip_html | truncatewords:30 }}</h4>
-        </div>
-        <div class="card-footer bg-white">
-            <div class="wrapfooter">
-              
-               
-                <span class="author-meta">
-               
-              
-                <span class="project-date">{{ project.date | date_to_string }} </span>
-                </span>
-                <span class="project-read-more"><a href="{{ site.baseurl }}{{ project.url }}" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                <div class="clearfix"></div>
+                <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
             </div>
         </div>
+        <div class="portfolio-desc">
+            <h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
+            <span>
+                {% for technology  in project.technologies %}
+                {{technology}} {% if forloop.last == false %},{% endif %}
+               {% endfor%}
+            </span>
+        </div>
     </div>
-</div>
-<!-- end project -->
+</article>

@@ -23,6 +23,8 @@ collections:
   technologies:
     output: true
     permalink: /services/:name/
+  questions:
+    output: false
 
 # Authors
 authors:

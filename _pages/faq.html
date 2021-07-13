@@ -1,7 +1,87 @@
 ---
-layout: default
+layout: page
 title: Foire Aux Questions
+subTitle : Toutes vos questions répondues en un seul endroit
 permalink: /faq
+floatingHeader : true
+darkSlider : true
 comments: false
+breadcrumb : [["FAQ","/faq"]]
+jsFiles : 
+- js/faq.js
 ---
+{% assign questions = site.questions | sort: "order" %}
+{% assign categories_questions = '' | split: '' %}
+{% for question in questions %}
+{% assign categories_questions = categories_questions | concat: question.categories | uniq    %}
+{% endfor %}
+
 {% include page-title.html %}
+
+
+
+<section id="content">
+    <div class="content-wrap pb-0">
+        <div class="container bottommargin">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8 text-center">
+                    <div class="heading-block border-bottom-0 center mx-auto">
+                        <div class="badge rounded-pill badge-default">Comment je peux vous aider ?</div>
+                        <h3 class="nott ls0 mb-3">Questions fréquemment posées</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <!-- Post Content
+                ============================================= -->
+                <div class="col-lg-10">
+
+                    <div class="grid-filter-wrap justify-content-center">
+                        <ul class="grid-filter style-4 customjs">
+                            <li class="activeFilter"><a href="#" class="fw-semibold" data-filter="all">Tous</a></li>
+                            {% for category in categories_questions %}
+                            <li><a href="#" class="fw-semibold" data-filter=".faq-{{category | replace: " ","-"}}">{{category}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div id="faqs" class="faqs">
+                       
+                        {% for question in questions %}
+                        <div class="toggle faq pb-3 mb-4 {% for category in question.categories %} faq-{{category | replace: " ","-"}} {% endfor %} ">
+                            <div class="toggle-header">
+                                <div class="toggle-icon color">
+                                    <i class="toggle-closed {{question.icon}}"></i>
+                                    <i class="toggle-open {{question.icon}}"></i>
+                                </div>
+                                <div class="toggle-title fw-semibold ps-1">
+                                   {{question.question}}
+                                </div>
+                                <div class="toggle-icon color">
+                                    <i class="toggle-closed icon-chevron-down text-black-50"></i>
+                                    <i class="toggle-open icon-chevron-up color"></i>
+                                </div>
+                            </div>
+                            <div class="toggle-content text-black-50 ps-4">
+                                {{question.content}}
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</section>
+
+        
