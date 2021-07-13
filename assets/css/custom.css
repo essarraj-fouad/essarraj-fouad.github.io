@@ -7,7 +7,7 @@
 
 .menu-item:hover > .menu-link,
 .menu-item.current > .menu-link {
-	color: #418FBF;
+	color: var(--themecolor, #418FBF);
 }
 
 

@@ -5,7 +5,8 @@
 /* Root Settings
 -----------------------------------------------------------------*/
 :root {
-	--themecolor:  #fE9603;
+	/*--themecolor:  #fE9603;*/
+	--themecolor:  #418FBF;
 	--basefontsize: 16px;
 	--fontfamily: 'Poppins', sans-serif;
 	--headerboxshadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
