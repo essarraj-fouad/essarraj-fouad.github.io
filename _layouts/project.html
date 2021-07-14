@@ -53,9 +53,14 @@ layout: page
 		<div class="sidebar-widgets-wrap">
 			<div class="widget widget_links clearfix">
 				{% if page.udemy %}
-				<a href="{{ site.baseurl }}{{ page.udemy }}" 
+				<a href="{{ page.udemy }}" 
 				class="button button-3d button-xlarge button-rounded button-amber" target="_blank"> 
 				Voir la formation</a>
+				{% endif %}
+				{% if page.ebook %}
+				<a href="{{ page.ebook }}" 
+				class="button button-3d button-xlarge button-rounded button-amber" target="_blank"> 
+				Consulter le livre</a>
 				{% endif %}
 			</div>
 			<div class="widget clearfix">
