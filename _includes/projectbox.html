@@ -1,8 +1,9 @@
-<article class="portfolio-item col-md-4 col-sm-6 col-12 {% for category in project.categories %} pf-{{ category | slugify }} {% endfor %} ">
+
+<article class="portfolio-item {% if include.carousel != true %} col-md-4 col-sm-6 col-12{% endif%} {% for category in project.categories %} pf-{{ category | slugify }} {% endfor %} ">
     <div class="grid-inner">
         <div class="portfolio-image">
             <a href="portfolio-single.html">
-                <img  src="{{ site.baseurl }}/{{ project.image }}" alt="{{ project.title }}"> 
+                <img  src="/{{ project.image }}" alt="{{ project.title }}"> 
             </a>
             <div class="bg-overlay">
                 <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
@@ -17,7 +18,7 @@
             </div>
         </div>
         <div class="portfolio-desc">
-            <h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
+            <h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }} aaaaaaaaa</a></h3>
             <span>
                 {% for technology  in project.technologies %}
                 {{technology}} {% if forloop.last == false %},{% endif %}

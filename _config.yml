@@ -5,6 +5,7 @@ description: "Ingénieur et formateur Web"
 baseurl: ''
 include: ["_pages"]
 permalink: /:title/
+url : https://essarrajfouad.com
 
 # Collections
 collections:
