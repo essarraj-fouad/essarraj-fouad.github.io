@@ -1,64 +1,28 @@
-<div class="share sticky-top sticky-top-offset">
-    <ul>
-        <li class="ml-1 mr-1">
-           
-        </li>
-
-        <li class="ml-1 mr-1">
-           
-        </li>
-
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'width=550,height=435');return false;">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </li>
-
-    </ul>
-    {% if page.comments != false %}
-    <div class="sep">
-    </div>
-    <ul>
-        <li>
-        <a class="small smoothscroll" href="#disqus_thread"></a>
-        </li>
-    </ul>
-    {% endif %}
-</div>
-
-
 <div class="si-share d-flex justify-content-between align-items-center">
-    <span>Share:</span>
+    <span>Partage :</span>
     <div>
+        <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-partage', 'width=550,height=435');return false;" class="social-icon si-borderless si-facebook" >
+            <i class="icon-facebook"></i>
+            <i class="icon-facebook"></i>
+        </a>
+
+        <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-partage', 'width=550,height=235');return false;" class="social-icon si-borderless si-twitter">
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+        </a>
+
+      
         
-        <a target="_blank" class="social-icon si-borderless si-facebook" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
-            <i class="icon-facebook"></i>
-            <i class="icon-facebook"></i>
+        
+ 
+        <a target="_blank" class="social-icon si-borderless si-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title }}" onclick="window.open(this.href,'linkedin-partage', 'width=550,height=435');return false;">
+            <i class="icon-linkedin"></i>
+            <i class="icon-linkedin"></i>
         </a>
-
-
-        <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"class="social-icon si-borderless si-twitter">
-            <i class="icon-twitter"></i>
-            <i class="icon-twitter"></i>
-        </a>
-
-        <a href="#" class="social-icon si-borderless si-pinterest">
+        <a target="_blank" href="http://pinterest.com/pin/create/button/?url={{ page.url | absolute_url }}&media={{ page.image | absolute_url }}&description={{ page.description  }}" onclick="window.open(this.href, 'pinterest-partage', 'width=550,height=235');return false;" class="social-icon si-borderless si-pinterest">
             <i class="icon-pinterest"></i>
             <i class="icon-pinterest"></i>
-        </a>
-        <a href="#" class="social-icon si-borderless si-gplus">
-            <i class="icon-gplus"></i>
-            <i class="icon-gplus"></i>
-        </a>
-        <a href="#" class="social-icon si-borderless si-rss">
-            <i class="icon-rss"></i>
-            <i class="icon-rss"></i>
-        </a>
-        <a href="#" class="social-icon si-borderless si-email3">
-            <i class="icon-email3"></i>
-            <i class="icon-email3"></i>
         </a>
     </div>
 </div>
-<!-- Portfolio Single - Share End -->
 </div>

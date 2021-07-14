@@ -1,5 +1,6 @@
 ---
 layout : project
+isTraining : true
 title : Formation - Mini projet langage C# et POO avec code source
 description : Gestion des clients dans e-commerce - pour bien apprendre la programmation orientée objet et ses techniques
 categories: [Formation]
@@ -7,9 +8,7 @@ technologies: [POO,C#]
 image : assets/images/portfolio/formations/formation-mini-projet-langage-csharp-et-poo-avec-code-source.jpg
 date : 20/05/2020
 author: essarraj
-isTraining : true
 video : https://www.youtube.com/embed/ORDMMadNX5s?v=ORDMMadNX5s
-video1 : https://www.youtube.com/watch?v=ORDMMadNX5s
 udemy: https://www.udemy.com/course/mini-projet-langage-csharp-et-poo-avec-code-source/?referralCode=A478A9B6D8951C43C495
 rating: 5
 ---
