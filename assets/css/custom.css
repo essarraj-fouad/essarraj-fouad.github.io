@@ -15,5 +15,12 @@
 	
 }
 
+/* ebook  */
+.ebook-page{
+	font-size: 1.2rem;
+}
+.ebook-page ol,ul{
+	padding-left: 40px;
+}
 
  
