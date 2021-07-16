@@ -87,7 +87,8 @@ post_class: post-template
 				<div class="sidebar col-lg-3">
 					<div class="sidebar-widgets-wrap">
 						<div class="widget clearfix">
-							<h4>Tags</h4>s
+							<h4>Tags</h4>
+							{{site.tags[0]}}
 							{% assign tags = site.tags | sort %}
 							{% for tag in tags %}
 							<div class="tagcloud">
