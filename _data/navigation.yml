@@ -4,7 +4,7 @@
   link: /portfolio
 - name: Services
   link: /services
-- name: Blogs
-  link: /blogs
+- name: Blog
+  link: /blog
 - name : Contact
   link : /contact

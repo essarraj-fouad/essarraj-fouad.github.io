@@ -9,6 +9,9 @@ url : https://essarrajfouad.com
 
 # Collections
 collections:
+  tags:
+    output: true
+    permalink: tags/:path/
   services:
     output: true
     permalink: /services/:name/
@@ -55,7 +58,7 @@ jekyll-archives:
     
 # Pagination 
 paginate: 6
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
     
 # Other
 markdown: kramdown
